@@ -1,0 +1,49 @@
+:root {
+  ---default-color: #5333ed;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0;
+  font-weight: normal;
+  height: 100%;
+  background-color: #ffffff;
+}
+button {
+  background-color: var(---default-color);
+  border: solid 2px var(---default-color);
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+a,
+.green {
+  text-decoration: none;
+  color: var(---default-color);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: #5333ed20;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #app {
+    max-width: 1400px;
+  }
+}
